@@ -2,6 +2,17 @@
   width: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#latest {
+  flex: 1;
+  background-color: red;
+}
+
 @media ( min-width: 500px ) {
   
   nav {
@@ -37,6 +48,50 @@
 
   footer a {
     color: inherit;
-  }  
+  }
+
+  #categories {
+    background-color: yellow;
+    justify-content: space-between;
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap; /* The items are alloed to drop to the next line*/
+  }
+
+  #main-categories {
+  	width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  #main-categories li {
+    flex: 1;
+    text-align: center;
+    padding: .5em;
+  }
+
+  #main-categories li:nth-child(1) {
+    background-color: red;
+  }
+  
+   #main-categories li:nth-child(2) {
+    background-color: orange;
+  }
+  
+   #main-categories li:nth-child(3) {
+    background-color: green;
+  }
+  
+   #main-categories li:nth-child(4) {
+    background-color: blue;
+  }
+
+
+
+
+
+
 
 }
